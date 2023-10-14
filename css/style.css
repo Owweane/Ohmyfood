@@ -93,6 +93,8 @@ input {
 .restaurants {
     background-color: #f6f6f6;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurants h2 {
@@ -156,7 +158,8 @@ input {
 
 .menu {
     background-color: #f6f6f6;
-    border-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
     padding-bottom: 60px;
 }
 
@@ -170,6 +173,12 @@ input {
 
 #heartmenu {
     font-size: 30px;
+}
+
+.logo img {
+    width: 100%;
+    display: flex;
+    margin: auto;
 }
 
 img {
@@ -226,4 +235,30 @@ img {
 footer {
     background-color: #353535;
     color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header img {
+        width: 25%;
+    }
+
+    .restaurants-card {
+        background-color: #9356DC;
+        width: 40%;
+        display: flex;
+        margin: auto;
+        border-radius: 30px;
+        margin-bottom: 0px;
+    }
+
+    .restaurants h2 {
+        background-color: #FF79DA;
+    }
+
+    .menu {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
 }
