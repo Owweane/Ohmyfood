@@ -25,7 +25,7 @@ input {
 }
 
 .input-icone {
-    box-shadow:inset 0px 8px 10px -10px gray;
+    box-shadow: 0px 8px 10px -10px gray;
     padding-top: 8px;
     background-color: #eaeaea;
 }
@@ -43,18 +43,20 @@ input {
 }
 
 .discovery h2 {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
     font-weight: 700;
+    font-size: 36px;
 }
 
 .discovery p {
     text-align: center;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -10px;
     font-weight: 100;
-    font-size: 19px;
+    font-size: 26px;
 }
 
 .discovery button {
@@ -62,10 +64,15 @@ input {
     margin: auto;
     border-style: none;
     background: linear-gradient(#FF79DA, #9356DC);
-    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     color: #FFFFFF;
     box-shadow: 0px 15px 15px -14px gray;
-    border-radius: 30px;
+    border-radius: 35px;
+    font-size: 23px;
+    margin-top: 40px;
 }
 
 
@@ -74,16 +81,24 @@ input {
 .function h2 {
     padding-left: 25px;
     padding-top: 30px;
+    font-size: 33px;
+}
+
+.functionbutton {
+    background-color: #9356DC;
+    
 }
 
 /***** Restaurants *****/
 .restaurants {
     background-color: #f6f6f6;
+    padding-bottom: 40px;
 }
 
 .restaurants h2 {
     padding-left: 25px;
     padding-top: 40px;
+    font-size: 35px;
 }
 
 
@@ -109,10 +124,13 @@ input {
 
 .restaurants-card h3 {
     padding-left: 10px;
+    font-size: 25px;
 }
 
 .restaurants-card p {
     padding-left: 10px;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .restaurants-card i {
@@ -128,18 +146,84 @@ input {
     color: black;
 }
 
-/***** Menus *****/
-
-.menu h2 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 32px;
-    padding-left: 10px;
+#heart {
+    background-color: #9356DC;
+    display: flex;
+    justify-content: flex-end;
 }
 
+/***** Menus *****/
 
+.menu {
+    background-color: #f6f6f6;
+    border-radius: 40px;
+    padding-bottom: 60px;
+}
+
+.menu h2 {
+    font-family: 'Shrikhand';
+    font-size: 40px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#heartmenu {
+    font-size: 30px;
+}
 
 img {
     width: 100%;
     display: flex;
     margin: auto;
+}
+
+.title-menu {
+    font-weight: 300;
+    padding-left: 15px;
+    padding-top: 25px;
+}
+
+.text-menu {
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 20px;
+    padding-left: 22px;
+    box-shadow: 0px 0px 20px 0px #eaeaea;
+}
+
+.text-menu h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 18px;
+}
+
+.text-menu p {
+    font-size: 21px;
+    font-weight: 300;
+    padding-bottom: 18px;
+    margin-top: -18px;
+}
+
+.menu button {
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    border-style: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 23px;
+    color: #FFFFFF;
+    box-shadow: 0px 15px 15px -14px gray;
+    border-radius: 35px;
+}
+
+/****** Footer ******/
+
+footer {
+    background-color: #353535;
+    color: white;
 }
