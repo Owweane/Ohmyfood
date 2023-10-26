@@ -3,16 +3,20 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #FFFFFF;
+.logoone {
+    margin-top: 20px;
+}
+
+header i {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 header img {
-    width: 55%;
-    margin: auto;
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 40%;
+    margin-top: -30px;
+    padding-bottom: 10px;
 }
 
 input {
@@ -85,8 +89,11 @@ input {
 }
 
 .functionbutton {
-    background-color: #9356DC;
-    
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 20px;
+    padding-left: 22px;
+    box-shadow: 0px 0px 20px 0px #eaeaea;
 }
 
 /***** Restaurants *****/
@@ -235,12 +242,29 @@ img {
 footer {
     background-color: #353535;
     color: white;
+    padding-left: 20px;
+    padding-bottom: 8px;
+}
+
+footer i {
+    margin-right: 12px;
+}
+
+footer img {
+    width: 28%;
+    padding-top: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
 
+    header i {
+        margin-top: 40px;
+    }
+    
     header img {
         width: 25%;
+        margin-top: -40px;
+        padding-bottom: 20px;
     }
 
     .restaurants-card {
