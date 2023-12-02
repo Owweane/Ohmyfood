@@ -27,7 +27,7 @@ body {
     z-index: 1;
     opacity: 0.9;
     animation: disp 3s forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
 
     @keyframes disp {
         0% {
@@ -38,28 +38,28 @@ body {
             z-index: -1;
         }
     }
+}
 
-    .cercle {
-        justify-content: center;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-top: 10px solid #9356DC;
-        border-bottom: 10px solid #9356DC;
-        border-left: 10px solid #FF79DA;
-        border-right: 10px solid #FF79DA;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: cercle 4s linear 2;
+.cercle {
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #9356DC;
+    border-left: 10px solid #FF79DA;
+    border-right: 10px solid #FF79DA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: cercle 4s linear 2;
+}
+
+@keyframes cercle {
+    0% {
+        transform: rotate(0deg);
     }
-
-    @keyframes cercle {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -275,7 +275,7 @@ header {
         opacity: 0;
         &:hover {
         opacity: 1;
-        color: #008766;
+        color: #FF79DA;
         }
 	}
 
@@ -392,15 +392,38 @@ hr {
 }
 
 .entrees {
-    background-color: blue;
+    opacity: 0;
+    animation: ent 2s forwards;
+}
+
+@keyframes ent {
+    100% {
+        opacity: 1;
+    }
 }
 
 .plats {
-    background-color: #9356DC;
+    opacity: 0;
+    animation: ent 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes ent {
+    100% {
+        opacity: 1;
+    }
 }
 
 .desserts {
-    background-color: #FF79DA;
+    opacity: 0;
+    animation: ent 2s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes ent {
+    100% {
+        opacity: 1;
+    }
 }
 
 
